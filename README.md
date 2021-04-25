@@ -1,39 +1,32 @@
-# node-js-getting-started
+# Chat
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+[![bucaramangajs](https://img.shields.io/badge/bucaramangajs-project-009bd4.svg)](http://meetup.com/BucaramangaJS)
+[![license](https://img.shields.io/github/license/bucaramangajs/chat.svg?maxAge=2592000)](./LICENSE)
 
-This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+Ejemplo de [Web Sockets](https://medium.com/bucaramangajs/real-time-websockets-25fa0cb520b4) con [Node.js](http://nodejs.org) y [socket.io](http://socket.io).
 
-## Running Locally
+![Screenshot](./screenshot.png)
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+## Anatomía
 
-```sh
-$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+- `package.json` - Definición del proyecto en Node.js
+- `server.js` - Servidor de sockets con socket.io y express.js
+- `client.js` - Aplicación del socket del cliente
+- `index.html` - Interfaz HTML del chat
+- `styles.css` - Diseño de la interfaz
+
+## Instalación
+
+Teniendo instalados Node.js y npm en el sistema, ejecutar:
+
+```bash
 $ npm install
-$ npm start
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+## Ejecución
 
-## Deploying to Heroku
+Este iniciará el servidor de sockets en `http://127.0.0.1:4000`.
 
+```bash
+$ npm run start
 ```
-$ heroku create
-$ git push heroku main
-$ heroku open
-```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
