@@ -1,0 +1,32 @@
+{
+  "name": "chat-nodejs-socketio",
+  "version": "1.0.0",
+  "description": "Chat montado con NodeJs y SocketIO",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon Server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnasiGarciaF/chat-nodeJs-socketIO.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "SocketIO",
+    "chat"
+  ],
+  "author": "Ignasi García",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IgnasiGarciaF/chat-nodeJs-socketIO/issues"
+  },
+  "homepage": "https://github.com/IgnasiGarciaF/chat-nodeJs-socketIO#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
