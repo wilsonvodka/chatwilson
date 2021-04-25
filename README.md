@@ -1,16 +1,39 @@
-# chat-nodeJs-socketIO
-Chat elaborado con NodeJs y SocketIO y maquetado con Bootstrap.
+# node-js-getting-started
 
-## Para arrancar el servidor
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-Simplemente posicionarse en la carpeta y ejecutar el comando:
+This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-```npm start```
+## Running Locally
 
-## Posibles problemas con el servidor y client si no hay comunicación.
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
-En el archivo **_Client/main.js_** modificar la siguiente linea:
+```sh
+$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
 ```
-var socket = io.connect('http://192.168.1.47:7077', { 'forceNew': true });
+
+Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Deploying to Heroku
+
 ```
-Para que la ip del _servidor_ sea la que tiene vuestra maquina que va a hostear el servidor.
+$ heroku create
+$ git push heroku main
+$ heroku open
+```
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Documentation
+
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
