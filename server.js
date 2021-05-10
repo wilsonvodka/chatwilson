@@ -8,7 +8,7 @@ const io = socketio(server);
 
 app.use(express.static(__dirname));
 
-server.listen(4000, function (err) {
+server.listen(process.env.PORT || 4000, function (err) {
   if (err) throw err;
   console.log('Servidor escuchando en http://localhost:4000');
 });
