@@ -1,11 +1,11 @@
 {
-  "name": "ejs-challenge",
+  "name": "chat-wilson",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "npm app.js"
   },
   "author": "",
   "license": "ISC",
